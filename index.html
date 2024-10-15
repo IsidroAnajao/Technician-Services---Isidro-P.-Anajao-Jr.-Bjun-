@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technician Services - Isidro P. Anajao Jr. (Bjun)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #666;
+      transition: 0.3s;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 1200px; /* Adjust max-width as needed */
+      margin: auto;
+      padding: 20px;
+      overflow: hidden; /* Prevents overflow */
+    }
+    .slides {
+      display: none;
+    }
+    .slides img {
+      width: 100%; 
+      height: auto; /* Change height to auto for responsiveness */
+      object-fit: cover; /* Ensures that the image covers the container without distortion */
+      object-position: center; /* Center the image */
+    }
+    .about, .services, .testimonials, .faq, .contact {
+      padding: 40px;
+      background-color: #fff;
+      text-align: center;
+    }
+    .services-icons {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+    .services-icons div {
+      flex-basis: 30%;
+    }
+    .services-icons img {
+      width: 60px;
+      height: 60px;
+    }
+    .testimonials, .faq {
+      background-color: #e9ecef;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .contact input[type="button"] {
+      padding: 10px 20px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .contact input[type="button"]:hover {
+      background-color: #666;
+    }
+    #map {
+      height: 300px;
+      width: 100%;
+      margin-top: 20px;
+    }
+    /* Slideshow animations */
+    .fade {
+      animation: fade 1.5s ease-in-out;
+    }
+    @keyframes fade {
+      from { opacity: 0.4 }
+      to { opacity: 1 }
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #444;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+    }
+    .back-to-top:hover {
+      background-color: #666;
+    }
+    /* Media Queries for responsiveness */
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+      .services-icons {
+        flex-direction: column;
+      }
+      .services-icons div {
+        margin-bottom: 20px;
+      }
+      .slideshow-container {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="Textures/bjun.jpg" alt="Bjun's Picture">
+  <h1>Isidro P. Anajao Jr. (Bjun)</h1>
+  <p>Expert Technician in Refrigerator, Air Conditioning, Freezer, and Washing Machine Repair</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="slideshow-container">
+  <div class="slides fade">
+    <img src="Textures/1.jpeg" alt="Slide 1">
+  </div>
+  <div class="slides fade">
+    <img src="Textures/7.jpeg" alt="Slide 2">
+  </div>
+  <div class="slides fade">
+    <img src="Textures/5.jpeg" alt="Slide 3">
+  </div>
+  <!-- Add more slides here -->
+</div>
+
+<section id="about" class="about">
+  <h2>About Bjun</h2>
+  <p>Isidro P. Anajao Jr., also known as Bjun, is a highly skilled technician with over 20 years of experience in repairing refrigerators, air conditioning units, freezers, and washing machines. His expertise and dedication to providing quick, reliable service make him a trusted choice for appliance repair in the area.</p>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="services-icons">
+    <div>
+      <img src="Textures/ref.png" alt="Refrigerator Repair">
+      <h3>Refrigerator Repair</h3>
+      <p>Fixing all models and brands of refrigerators.</p>
+    </div>
+    <div>
+      <img src="Textures/wash.png" alt="Washing Machine Repair">
+      <h3>Washing Machine Repair</h3>
+      <p>Professional repair for top-loading and front-loading machines.</p>
+    </div>
+    <div>
+      <img src="Textures/free.png" alt="Freezer Repair">
+      <h3>Freezer Repair</h3>
+      <p>Quick and reliable freezer maintenance.</p>
+    </div>
+    <div>
+      <img src="Textures/aircon.png" alt="Air Conditioning Repair">
+      <h3>Air Conditioning Repair</h3>
+      <p>Expert repairs for all air conditioning brands.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials">
+  <h2>Customer Testimonials</h2>
+  <p>"Bjun is the best technician I've ever hired. My refrigerator works like new!" - Carmelita</p>
+  <p>"Fast and reliable service from Bjun. Highly recommended!" - Anonymous</p>
+</section>
+
+<section id="faq" class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <p><strong>Q:</strong> How quickly can repairs be done?</p>
+  <p><strong>A:</strong> Most repairs can be done within 1-2 days, depending on parts availability.</p>
+  
+  <p><strong>Q:</strong> Do you provide a warranty?</p>
+  <p><strong>A:</strong> Yes, we offer a 1-month warranty on all repairs.</p>
+  
+  <p><strong>Q:</strong> Do you provide emergency services?</p>
+  <p><strong>A:</strong> Yes, we provide emergency repair services.</p>
+  
+  <p><strong>Q:</strong> Are you available in fixing electronics every day?</p>
+  <p><strong>A:</strong> No, I only work Saturday and Sunday.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>If you have any questions, please click the button below:</p>
+  <a href="https://airtable.com/appdWzjlGJYZVcSxk/shr70A8rRpHsDZzV6" target="_blank">
+    <input type="button" value="Have Questions?">
+  </a>
+  <div id="map"></div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Isidro P. Anajao Jr. (Bjun). All Rights Reserved.</p>
+  <p>Contact: <a href="mailto:isidroanajao@gmail.com">isidroanajao@gmail.com</a> | Phone: 09651885872 or 09488433232</p>
+</footer>
+
+<div class="back-to-top" onclick="scrollToTop()">↑ Back to Top</div>
+
+<script>
+  // Slideshow functionality
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    const slides = document.getElementsByClassName("slides");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex - 1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change slide every 2 seconds
+  }
+
+  // Back to Top functionality
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    const backToTopButton = document.querySelector(".back-to-top");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  }
+
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+</body>
+</html>
